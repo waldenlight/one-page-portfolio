@@ -1,0 +1,129 @@
+:root {
+    --black-grey: #201f20;
+    --dark-grey: #343334;
+    --light-grey: #514f51;
+    --white-grey: #686768;
+    --purple: #ad3aaf;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--black-grey);
+}
+
+header {
+    margin: 0;
+    background-color: var(--dark-grey);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--purple);
+    padding: 0px 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 800px;
+    margin: 30px;
+    background-color: var(--light-grey);
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    color: var(--purple);
+    font-size: 40px;
+    margin: 15px;
+}
+
+section>h3 {
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+li {
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.cards {
+    width: 600px;
+    display: block;
+    color: white;
+}
+
+.first-app {
+    width: auto;
+}
+
+.first-img {
+    border-radius: 10%;
+    border: #201f20 solid 5px;
+    margin: 5px;
+}
+
+.first-app p {
+    padding: 10px;
+}
+
+.sub-cards {
+    display: flex;
+    width: 600px;
+    font-size: 10px;
+}
+
+.card {
+    background-color: var(--white-grey);
+    border-radius: 10%;
+    max-height: 100px;
+    border: var(--black-grey) solid 10px;
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+    border: var(--black-grey) solid 5px;
+}
+
+.card {
+    background-image: url("/assets/images/camp.jpg");
+}
+
+.card h3 {
+    margin-left: 20px;
+}
+
+.card p {
+    margin: 10px;
+}
+
+footer {
+    margin: 0;
+    background-color: var(--dark-grey);
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--purple);
+    padding: 20px;
+}
