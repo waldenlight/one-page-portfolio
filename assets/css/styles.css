@@ -1,9 +1,9 @@
 :root {
-    --black-grey: #201f20;
-    --dark-grey: #343334;
-    --light-grey: #514f51;
-    --white-grey: #686768;
-    --purple: #ad3aaf;
+    --outer-space-crayola: rgb(52, 63, 62);
+    --quick-silver: rgb(171, 159, 157);
+    --gainsboro: rgb(227, 219, 219);
+    --bud-green: rgb(95, 173, 86);
+    --electric-purple: rgb(194, 0, 251);
 }
 
 * {
@@ -11,12 +11,12 @@
 }
 
 body {
-    background-color: var(--black-grey);
+    background-color: var(--quick-silver);
 }
 
 header {
     margin: 0;
-    background-color: var(--dark-grey);
+    background-color: var(--outer-space-crayola);
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ h1 {
 
 nav a {
     text-decoration: none;
-    color: var(--purple);
+    color: var(--electric-purple);
     padding: 0px 20px;
     margin-top: 10px;
     font-size: 20px;
@@ -44,14 +44,14 @@ nav a {
 
 main {
     width: 800px;
-    margin: 30px;
-    background-color: var(--light-grey);
+    margin: 20px;
+    background-color: var(--outer-space-crayola);
     color: white;
     padding: 10px;
 }
 
 h2 {
-    color: var(--purple);
+    color: var(--electric-purple);
     font-size: 40px;
     margin: 15px;
 }
@@ -67,10 +67,38 @@ li {
     margin-left: 30px;
 }
 
+.profile-card {
+    height: fit-content;
+    background-color: var(--gainsboro);
+    color: var(--outer-space-crayola);
+    border: var(--outer-space-crayola) solid 8px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+}
+
+.profile-card img {
+    max-width: 300px;
+    border: var(--outer-space-crayola) solid 5px;
+    border-radius: 10%;
+}
+
+.profile-card h3 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+#bio {
+    margin: 20px;
+}
+
 .cards {
     width: 600px;
     display: block;
-    color: white;
+    color: var(--outer-space-crayola);
 }
 
 .first-app {
@@ -79,7 +107,7 @@ li {
 
 .first-img {
     border-radius: 10%;
-    border: #201f20 solid 5px;
+    border: var(--quick-silver) solid 5px;
     margin: 5px;
 }
 
@@ -94,14 +122,14 @@ li {
 }
 
 .card {
-    background-color: var(--white-grey);
+    background-color: var(--gainsboro);
     border-radius: 10%;
     max-height: 100px;
-    border: var(--black-grey) solid 10px;
+    border: var(--gainsboro) solid 10px;
     display: block;
     overflow: hidden;
     margin: 10px;
-    border: var(--black-grey) solid 5px;
+    border: var(--outer-space-crayola) solid 5px;
 }
 
 .card {
@@ -118,12 +146,12 @@ li {
 
 footer {
     margin: 0;
-    background-color: var(--dark-grey);
+    background-color: var(--outer-space-crayola);
     padding: 30px;
 }
 
 footer a {
     text-decoration: none;
-    color: var(--purple);
+    color: var(--electric-purple);
     padding: 20px;
 }
