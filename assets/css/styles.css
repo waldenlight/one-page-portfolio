@@ -125,7 +125,7 @@ a.card-link {
 }
 
 .card:hover {
-    box-shadow: 10px 5px 8px var(--electric-purple);
+    box-shadow: 5px 5px 8px var(--electric-purple);
     position: relative;
     transform: translateY(-5px) translateX(-5px);
     transition: box-shadow 500ms ease-in-out;
@@ -191,6 +191,64 @@ a.card-link {
     display: block;
     overflow: hidden;
     margin: 5px;
+}
+
+.contact-card {
+    height: fit-content;
+    background-color: var(--gainsboro);
+    color: var(--outer-space-crayola);
+    border: var(--outer-space-crayola) solid 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+#contact-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-card h3 {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: var(--outer-space-crayola);
+}
+
+.contact-card h3:hover {
+    text-decoration: none;
+    position: relative;
+    transform: translateY(-3px) translateX(-3px);
+    transition: box-shadow 500ms ease-in-out;
+    transition: transform 500ms;
+}
+
+#tooltip-phone {
+    position: relative;
+}
+
+#tooltip-phone:hover::before {
+    content: attr(data-rating);
+    font-size: 15px;
+    color: var(--outer-space-crayola);
+    background-color: var(--gainsboro);
+    border-radius: 5px;
+    border: 3px solid var(--outer-space-crayola);
+    top: 40px;
+    position: absolute;
+    z-index: 1000;
+    padding: 2px 4px;
+    width: 100%;
+    content: "(720)643-3140";
+    white-space: nowrap;
+    text-shadow: none;
+    transform: none;
+    width: fit-content;
 }
 
 footer {
