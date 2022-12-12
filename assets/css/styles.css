@@ -132,11 +132,6 @@ a.card-link {
     transition: transform 500ms;
 }
 
-.card-content {
-    background-color: var(--gainsboro);
-    width: 100%;
-}
-
 #first-card p,
 #first-card h3 {
     margin: 5px 40px;
@@ -144,6 +139,7 @@ a.card-link {
 
 .sub-cards {
     display: flex;
+    flex-wrap: wrap;
     width: 600px;
 }
 
@@ -157,10 +153,40 @@ a.card-link {
     margin: 5px 10px 5px 5px;
 }
 
+.card-content {
+    background-color: rgba(227, 219, 219, 0.775);
+    width: 100%;
+}
+
+#bootcamp-proj-two {
+    background-image: url("../images/data.jpg");
+}
+
+#yelp-camp {
+    background-image: url("../images/camp.jpg");
+}
+
+#in-depth-portfolio {
+    background-image: url("../images/mountains.JPG");
+    background-position: top 10px;
+}
+
+#shuffle-music {
+    background-image: url("../images/concert.jpg");
+    background-position: bottom;
+}
+
+.sub-cards .card {
+    display: flex;
+    align-items: end;
+}
+
 .card {
-    background-color: var(--gainsboro);
     border-radius: 20px;
-    min-height: 80px;
+    width: 290px;
+    min-height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
     border: var(--gainsboro) solid 5px;
     display: block;
     overflow: hidden;
