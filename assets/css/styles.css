@@ -27,6 +27,10 @@ header {
     align-items: end;
 }
 
+header a {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 30px;
     color: white;
@@ -75,7 +79,7 @@ li {
     margin-left: 30px;
 }
 
-.profile-card {
+#profile-card {
     height: fit-content;
     background-color: var(--gainsboro);
     color: var(--outer-space-crayola);
@@ -88,13 +92,13 @@ li {
     padding: 20px;
 }
 
-.profile-card img {
+#profile-card img {
     max-width: 300px;
     border: var(--outer-space-crayola) solid 5px;
     border-radius: 20px;
 }
 
-.profile-card h3 {
+#profile-card h3 {
     font-size: 30px;
     margin: 20px;
 }
@@ -193,7 +197,7 @@ a.card-link {
     margin: 5px;
 }
 
-.contact-card {
+#contact-card {
     height: fit-content;
     background-color: var(--gainsboro);
     color: var(--outer-space-crayola);
@@ -210,17 +214,17 @@ a.card-link {
     flex-wrap: wrap;
 }
 
-.contact-card h3 {
+#contact-card h3 {
     font-size: 25px;
     margin: 20px;
 }
 
-.contact-card a {
+#contact-card a {
     text-decoration: none;
     color: var(--outer-space-crayola);
 }
 
-.contact-card h3:hover {
+#contact-card h3:hover {
     text-decoration: none;
     position: relative;
     transform: translateY(-3px) translateX(-3px);
@@ -261,4 +265,187 @@ footer a {
     text-decoration: none;
     color: var(--electric-purple);
     padding: 20px;
+}
+
+@media screen and (max-width: 684px) {
+    #profile-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 638px) {
+
+    header {
+        display: block;
+    }
+
+    header h1 {
+        margin-bottom: 30px;
+    }
+
+    nav a {
+        margin-top: 30px;
+    }
+
+    main {
+        max-width: 500px;
+        font-size: 20px;
+    }
+
+    .sub-cards {
+        width: 480px;
+    }
+
+    .card {
+        width: 230px;
+    }
+
+    #contact-card {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        /* flex-direction: column; */
+        margin: 20px 10px 20px 0px;
+        background-color: var(--gainsboro);
+        border-radius: 10px;
+        padding: 8px 10px;
+        width: fit-content;
+        font-weight: bold;
+    }
+
+    main {
+        max-width: 400px;
+        font-size: 20px;
+    }
+
+    #profile-card img {
+        max-width: 220px;
+    }
+
+    .sub-cards {
+        width: 380px;
+    }
+
+    .card {
+        width: 180px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    header {
+        display: block;
+        padding: 10px;
+    }
+
+    header h1 {
+        margin-bottom: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        /* flex-direction: column; */
+        margin: 20px 10px 20px 0px;
+        background-color: var(--gainsboro);
+        border-radius: 10px;
+        padding: 8px 10px;
+        width: fit-content;
+        font-weight: bold;
+    }
+
+    main {
+        max-width: 360px;
+        font-size: 15px;
+    }
+
+    #profile-card img {
+        max-width: 200px;
+    }
+
+    .sub-cards {
+        width: 280px;
+    }
+
+    .card {
+        width: 330px;
+    }
+
+    #contact-card {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+
+    header {
+        display: block;
+        padding: 15px;
+    }
+
+    header h1 {
+        margin-bottom: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        /* flex-direction: column; */
+        margin: 20px 10px 0px 0px;
+        background-color: var(--gainsboro);
+        border-radius: 10px;
+        padding: 8px 10px;
+        width: fit-content;
+        font-weight: bold;
+    }
+
+    main {
+        max-width: 360px;
+        font-size: 15px;
+    }
+
+    #profile-card img {
+        max-width: 200px;
+    }
+
+    .sub-cards {
+        width: 280px;
+    }
+
+    .card {
+        width: 330px;
+    }
+
+    #contact-card {
+        display: block;
+    }
+
 }
