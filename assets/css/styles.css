@@ -15,7 +15,10 @@ html {
 }
 
 body {
-    background-color: var(--quick-silver);
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -29,6 +32,7 @@ header {
 
 header a {
     text-decoration: none;
+    font-weight: bold;
 }
 
 h1 {
@@ -263,6 +267,7 @@ footer {
 
 footer a {
     text-decoration: none;
+    font-weight: bold;
     color: var(--electric-purple);
     padding: 20px;
 }
