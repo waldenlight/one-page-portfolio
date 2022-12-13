@@ -7,11 +7,10 @@ In this project, I improved my ability to create responsive websites from scratc
 ## Usage
 
 Simply open up the site in GitHub pages: [link](https://waldenlight.github.io/one-page-portfolio/)
-Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+You should see this:
 
-    ![alt text](./assets/images/screenshot.png)
+   ![screenshot of website](https://user-images.githubusercontent.com/76961678/207443176-e0cb622b-6e9f-4316-88eb-55c7b8af6381.png) 
 
 ## License
 
